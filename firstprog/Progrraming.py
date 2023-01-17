@@ -1,0 +1,53 @@
+# import random
+# lst=("s","p","c")
+# count2=0
+# count1=0
+# i=0
+# z=10
+# while(i<=z):
+#     print("\tYOU HAVE " + str(z - i) + " CHANCES")
+#     x = random.choice(lst)
+#     # print(x)
+#     n = input("Enter your choice as follow\n\t\tSTONE=s\n\t\tPAPER=p\n\t\tSCISSOR=c\n\t\t")
+#     if(x=="s" and n=="p"):
+#        print("\t\twin")
+#        count1 = count1+1
+#        print("You won "+str(count1)+"time/times\n")
+#     elif(x=="p" and n=="c"):
+#         print("\t\tWIN....")
+#         count1 = count1 + 1
+#         print("You won " + str(count1) + "time/times\n")
+#     elif(x=="c" and n=="s"):
+#         print("\t\twin")
+#         count1 = count1 + 1
+#         print("You won " + str(count1) + " time/times\n")
+#     elif(x==n):
+#         print("\t\tTIE....")
+#         # print("You won " + str(count1) + " times\n")
+#     elif (i > 10):
+#         print("Your chances exceed")
+#         print("Your score" + str(count1))
+#     else:
+#         print("\t\tLOSE...")
+#         count2=count2+1
+#         print("You lost "+str(count2)+" time/times\n")
+#     i = i + 1
+# print("YOUR SCORE IS "+str(count1))
+
+def dec(fun):
+    def wrp():
+        print("\t=====================")
+        fun()
+        print("\t=====================")
+    return wrp
+@dec
+def printx():
+
+        print("\t\tTIED!!!")
+        print("\t\tYOU LOST\n" + "\t\tTRY AGAIN!!!!")
+
+printx()
+
+
+
+
